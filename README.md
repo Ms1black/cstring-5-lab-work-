@@ -139,7 +139,9 @@ II Решение
 Сначала идея была такова
 
 <div align="center">
+  
 <img src="https://github.com/user-attachments/assets/ced2ca49-0c52-4f90-8311-55df04363325" width="500px">
+
 <img src="https://github.com/user-attachments/assets/726e6de9-abd3-46ea-ab18-457001095782" width="400px">
 </div>
 
