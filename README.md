@@ -133,14 +133,106 @@ I Осознание
 
 <div align="center">
   
-II Решение
+II Решение  
 -----
+</div>
+Сначала идея была такова
 
-
-
-
+<div align="center">
+<img src="https://github.com/user-attachments/assets/ced2ca49-0c52-4f90-8311-55df04363325" width="500px">
+<img src="https://github.com/user-attachments/assets/726e6de9-abd3-46ea-ab18-457001095782" width="400px">
 </div>
 
-**Советую к прочтению:**
-- [Про языковой стандарт (setlocale)](https://learn.microsoft.com/ru-ru/cpp/c-runtime-library/reference/setlocale-wsetlocale?view=msvc-170)
+Но это в моменте показалось бредовым, ведь есть метод проще - а именно, пробегаться по массиву, но через элемент(по числам), сделав шаг не `i++` а `i+=2`, и брать литер от `a[i-1]` элемента(чтобы не выйти за пределы массива). 
+Вот кратенько по пунктам:
+<div align="center">
+<img src="https://github.com/user-attachments/assets/aced0136-0211-4db6-998b-39af01f22d6a" width="400px">
+</div>
+
+III Кодинг
+-----
+1. __Подлючаю заголовочные:__
+
+```cpp
+#include <iostream>
+```
+Я пробовала сделать с помощью atoi, но там много вылезло заморочек
+
+
+
+2. __Пишем ввод:__
+```cpp
+char input[100]; 
+std::cin.getline(input, 100); 
+```
+Ну в вводе - ничего особенного.
+
+
+3. __Вот тут и начался прикол__
+   
+Как я сказала выше, atoi оказался не дружелюбным, поэтому благодарим https://qna.habr.com/q/1090394  
+Почему так? Да потому)    
+В плюсах можно просто вычесть символ `'0'` из символа цифры, чтобы получить его целое значение.   
+Например: `'3' - '0'` даст число `3`
+
+```cpp
+int result = input[0] - '0';
+```
+Тут мы сохранили первое число, чтобы дальше уже работать с циклом и не выйти за пределы строки слева. 
+
+
+4. __Пишем цикл__
+
+Так как у нас уже записано первое число, то в процессе было решено, сначала определить знак, а след. символом число.  
+то есть теперь наш алгоритм выглядит так:
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/19934854-4997-417b-9d9f-bccc01cb019c" width="350px">
+</div>
+вот код этого алгоритма, на пальцах:
+
+
+```cpp
+   for (int i = 1; input[i] != '='; i += 2) { // Шагаем через два элемента
+        int nextNumber = input[i + 1] - '0'; // Преобразуем следующую цифру в число
+
+        if (input[i] == '+') { // Если знак плюса, прибавляем
+            result += nextNumber; 
+        }
+        else if (input[i] == '-') { // Если знак минуса, вычитаем
+            result -= nextNumber; 
+        }
+    }
+```
+
+5. __Готовая программка__
+
+```cpp
+nclude <iostream>
+
+int main() {
+    char input[100];
+    std::cin.getline(input, 100); 
+
+    int result = input[0] - '0'; 
+
+    for (int i = 1; input[i] != '='; i += 2) { 
+        int nextNumber = input[i + 1] - '0'; 
+
+        if (input[i] == '+') {
+            result += nextNumber; 
+        }
+        else if (input[i] == '-') {
+            result -= nextNumber; 
+        }
+    }
+
+    std::cout << "Сумма: " << result << std::endl; 
+    return 0;
+}
+
+```
+--------
+
+
 ![bdd7770cd828942e152bec5b71265245](https://github.com/user-attachments/assets/f6c87c1b-81a2-420b-b191-6013b07f2926)
