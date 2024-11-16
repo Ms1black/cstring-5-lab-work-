@@ -89,15 +89,15 @@ return 0;
 | Функция | Заголовок | Описание | Пример использования |
 | ----------- | ----------- | ----------- | ----------- |
 | `strcpy(s1,s2)`    | `<cstring>`   | Копирование строки s2 в строку s1  | [взглянуть](https://github.com/Ms1black/cstring-lecture/blob/strcpy/example.cpp) |
-| `strcat(s1,s2)`    | `<cstring>`   | Строка s2 присоединяется к строке s1  | ----------- |
-| `strcmp(s1,s2)`    | `<cstring>`   | Сравнение строк s1 и s2: если строки равны, возвращается значение 0  | ----------- |
-| `strchr(s1,ch)`    | `<cstring>`   | Указатель на первую позицию символа ch в строке s  | ----------- |
-| `strlen(s)`    | `<cstring>`   | Возвращает длину строки, указанной аргументом s  | ----------- |
-| `atoi(s)`    | `<cstdlib>`   | Преобразование состоящей из цифр строки s в целое число типа int  | ----------- |
-| `atol(s)`    | `<cstdlib>`   | Преобразование состоящей из цифр строки s в целое число типа long  | ----------- |
-| `atof(s)`    | `<cstdlib>`   | Преобразование состоящей из цифр строки s в целое число типа double | ----------- |
-| `tolower(ch)`    | `<cctype>`   | Преобразование буквенного символа ch к строчному формату  | ----------- |
-| `toupper(ch)`    | `<cctype>`   | Преобразование буквенного символа ch к прописному формату  | ----------- |
+| `strcat(s1,s2)`    | `<cstring>`   | Строка s2 присоединяется к строке s1  | [взглянуть](https://github.com/Ms1black/cstring-lecture/blob/strcat/example.cpp) |
+| `strcmp(s1,s2)`    | `<cstring>`   | Сравнение строк s1 и s2: если строки равны, возвращается значение 0  | [взглянуть](https://github.com/Ms1black/cstring-lecture/blob/strcmp/example.cpp) |
+| `strchr(s1,ch)`    | `<cstring>`   | Указатель на первую позицию символа ch в строке s  | [взглянуть](https://github.com/Ms1black/cstring-lecture/blob/strchr/example.cpp) |
+| `strlen(s)`    | `<cstring>`   | Возвращает длину строки, указанной аргументом s  | [взглянуть](https://github.com/Ms1black/cstring-lecture/blob/strlen/example.cpp) |
+| `atoi(s)`    | `<cstdlib>`   | Преобразование состоящей из цифр строки s в целое число типа int  | [взглянуть](https://github.com/Ms1black/cstring-lecture/blob/atoi/example.cpp) |
+| `atol(s)`    | `<cstdlib>`   | Преобразование состоящей из цифр строки s в целое число типа long  | [взглянуть](https://github.com/Ms1black/cstring-lecture/blob/atol/example.cpp) |
+| `atof(s)`    | `<cstdlib>`   | Преобразование состоящей из цифр строки s в целое число типа double | [взглянуть](https://github.com/Ms1black/cstring-lecture/blob/atof/example.cpp) |
+| `tolower(ch)`    | `<cctype>`   | Преобразование буквенного символа ch к строчному формату  | [взглянуть](https://github.com/Ms1black/cstring-lecture/blob/tolower/example.cpp) |
+| `toupper(ch)`    | `<cctype>`   | Преобразование буквенного символа ch к прописному формату  | [взглянуть](https://github.com/Ms1black/cstring-lecture/blob/toupper/example.cpp) |
 
 -----
 
