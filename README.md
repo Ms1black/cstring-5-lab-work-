@@ -104,4 +104,4 @@ return 0;
 
 **Советую к прочтению:**
 
-- ![Про языковой стандарт (setlocale)](https://learn.microsoft.com/ru-ru/cpp/c-runtime-library/reference/setlocale-wsetlocale?view=msvc-170)
+- [Про языковой стандарт (setlocale)](https://learn.microsoft.com/ru-ru/cpp/c-runtime-library/reference/setlocale-wsetlocale?view=msvc-170)
