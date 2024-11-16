@@ -102,18 +102,22 @@ return 0;
 -----
 
 ###  Попробуем задачу щелкнуть  *~~либо она решается, либо я начинаю истерить~~*
-
-
------
-
-<div align="center" width="300">
+<div align="center">
   
-![изображение](https://github.com/user-attachments/assets/211fa716-39f7-426d-a405-d5975106aa52)
+-----
+I Осознание
+-----
 
 </div>
 
- <img src="https://github.com/user-attachments/assets/b437fde5-e0a0-4de6-b168-290dc5ceb5e9" width="250px">
+#### Прочитаем условие:
+<div align="center">
+  
+![изображение](https://github.com/user-attachments/assets/211fa716-39f7-426d-a405-d5975106aa52)
+</div>
 
+
+<img src="https://github.com/user-attachments/assets/b437fde5-e0a0-4de6-b168-290dc5ceb5e9" width="100px">
 
 ##### Какие данные?
 >###### на вход получаем "пример в строке", а вывести должны сумму
@@ -123,9 +127,20 @@ return 0;
 >>
 >>Выводим: `6`
 
+
 ##### В чем прикол задачи?
 >###### прикол в том, что вводим мы символы, а их надо преобразовать в int и выполнить указанное арифметическое действие.
 
-**Советую к прочтению:**
+<div align="center">
+  
+II Решение
+-----
 
+
+
+
+</div>
+
+**Советую к прочтению:**
 - [Про языковой стандарт (setlocale)](https://learn.microsoft.com/ru-ru/cpp/c-runtime-library/reference/setlocale-wsetlocale?view=msvc-170)
+![bdd7770cd828942e152bec5b71265245](https://github.com/user-attachments/assets/f6c87c1b-81a2-420b-b191-6013b07f2926)
