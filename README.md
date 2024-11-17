@@ -210,7 +210,7 @@ int result = input[0] - '0';
 5. __Готовая программка__
 
 ```cpp
-nclude <iostream>
+include <iostream>
 
 int main() {
     char input[100];
